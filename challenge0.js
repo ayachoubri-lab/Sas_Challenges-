@@ -62,13 +62,52 @@ if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
 
 
 // Level 3 : Basic Calculator 
-let n1 = 2 , n2= 5 ;
-let op ="+" ;
-switch(op){
- case "+":
-    console.log(n1+n2)
+let n1 = 10 , n2 = 0;
+let operator = "+";
+switch (operator) {
+  case "+":
+    console.log(n1 + n2);
     break;
-case "-":
-    console.log(n1-n2)
+  case "-":
+    console.log(n1 - n2);
     break;
+  case "*":
+    console.log(n1 * n2);
+    break;
+  case "/":
+    if (n2 === 0) {
+      console.log("Indivisible par zero");
+    } else {
+      console.log(n1 / n2);
+    }
+    break;
+  default:
+    console.log("Erreur");
+}
+   
+// Valid triangle
+
+let agl1 = 60,  agl2 = 60, agl3 = 60;
+
+let somme = agl1 + agl2 + agl3;
+
+if (agl1 > 0 && agl2 > 0 && agl3 > 0 && sum === 180) {
+  console.log("triangle");
+} else {
+  console.log("Pas un triangle");
+}
+
+
+//BMI Calculator 
+
+let weight = 65 , height = 1.65 ;
+
+let bmi = weight / (height * height);
+
+if (bmi < 18.5) {
+  console.log("BMI : ", bmi, " underweight");
+} else if (bmi <= 24.9) {
+  console.log("BMI : ", bmi, " normal");
+} else {
+  console.log("BMI : ", bmi, " overweight");
 }
