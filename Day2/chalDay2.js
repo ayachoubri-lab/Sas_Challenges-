@@ -9,13 +9,15 @@ function afficherPaire(n){
 
     
 //Compter les résultats pairs
-function compterPairs(nbr1, nbr2) {
-    for(let a=nbr1 ;a<=nbr2; a++){
-  
-    }
-     
-    
 
-    
-    
+function compterPairs(nbr1, nbr2) {
+    let cont =0 ;
+    for(let i=nbr1 ;i<=nbr2; i++){
+      let sum = nbr1+nbr2+ i 
+      if (sum%2 ===0){
+      cont++;
+      }
+    }
+    return cont++ ;
 }
+ console.log(compterPairs(3,8));
